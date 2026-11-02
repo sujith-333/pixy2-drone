@@ -1,11 +1,12 @@
 {
   "name": "Pixy2 Drone SITL",
-  "image": "ardupilot/ardupilot:sitl",
+  "image": "ardupilot/ardupilot:latest",
   "forwardPorts": [14550, 5760, 8080],
   "postCreateCommand": "pip install pyserial pymavlink",
   "customizations": {
     "vscode": {
       "extensions": ["ms-vscode.cpptools"]
     }
-  }
+  },
+  "remoteUser": "root"
 }
